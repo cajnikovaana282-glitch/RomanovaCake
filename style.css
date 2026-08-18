@@ -197,7 +197,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=1600&auto=format&fit=crop') center/cover no-repeat;
+    background: url('images/hero.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
 
