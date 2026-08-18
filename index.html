@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMANOVA CAKE — торты, капкейки, бенто</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Логотип ROMANOVA CAKE" class="logo__img">
+                <span class="logo__text">ROMANOVA CAKE</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#hero" class="nav__link">Главная</a>
+                <a href="#catalog" class="nav__link">Каталог</a>
+                <a href="#calculator" class="nav__link">Калькулятор</a>
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#reviews" class="nav__link">Отзывы</a>
+                <a href="#faq" class="nav__link">FAQ</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+                <a href="#order" class="nav__link nav__link--btn">Оставить заявку</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Меню" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-overlay" id="nav-overlay"></div>
+        </div>
+    </header>
+
+    <!-- Герой -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <p class="hero__badge">Домашняя пекарня с 2015 года</p>
+            <h1 class="hero__title">Торты, капкейки и бенто-торты ручной работы</h1>
+            <p class="hero__subtitle">Создаём десерты, которые запоминаются. Рассчитайте стоимость вашего идеального торта прямо сейчас!</p>
+            <div class="hero__buttons">
+                <a href="#calculator" class="btn">Рассчитать стоимость</a>
+                <a href="#order" class="btn btn--outline">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества (SVG-иконки) -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features__grid">
+                <div class="feature-card">
+                    <span class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-9 4 2 7 5 7 9a7 7 0 0 1-7 7z"/><path d="M11 20v-8"/><path d="M7 13h8"/></svg>
+                    </span>
+                    <h3>Натуральные ингредиенты</h3>
+                    <p>Только свежие ягоды, фермерские сливки и бельгийский шоколад.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l-7-7a4.5 4.5 0 0 1 6-6l1 1 1-1a4.5 4.5 0 0 1 6 6l-7 7z"/><path d="M12 5v14"/></svg>
+                    </span>
+                    <h3>Индивидуальный дизайн</h3>
+                    <p>Воплотим любую вашу идею — от классики до современных трендов.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.5 3-5.5A5 5 0 0 0 17 3c-2 0-4 1.5-5 3-1-1.5-3-3-5-3a5 5 0 0 0-5 5.5C2 10.5 3.5 12.5 5 14l7 7 7-7z"/></svg>
+                    </span>
+                    <h3>Гарантия качества</h3>
+                    <p>Более 1000 довольных клиентов и 10 лет опыта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог (локальные фото) -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Каталог</h2>
+            <div class="catalog__grid">
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cake-classic.jpg" alt="Торт классический">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Торт «Классический»</h3>
+                        <p>Нежный ванильный бисквит с крем-чизом</p>
+                        <span class="product-card__price">от 2 500 ₽</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cupcakes.jpg" alt="Капкейки ассорти">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Капкейки «Ассорти»</h3>
+                        <p>Набор из 6 капкейков с разными начинками</p>
+                        <span class="product-card__price">от 1 200 ₽</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/bento-mini.jpg" alt="Бенто-торт">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Бенто-торт «Мини»</h3>
+                        <p>Идеален для подарка — 1 порция</p>
+                        <span class="product-card__price">от 1 500 ₽</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cake-chocolate.jpg" alt="Шоколадный торт">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Торт «Шоколадный»</h3>
+                        <p>Тёмный шоколад, ганаш, вишня</p>
+                        <span class="product-card__price">от 3 000 ₽</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/cupcakes-vanilla.jpg" alt="Капкейки ванильные">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Капкейки «Ваниль»</h3>
+                        <p>Воздушный ванильный крем, посыпка</p>
+                        <span class="product-card__price">от 180 ₽/шт</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/bento-berry.jpg" alt="Бенто-торт с ягодами">
+                    </div>
+                    <div class="product-card__body">
+                        <h3>Бенто-торт «Ягодный»</h3>
+                        <p>Свежие ягоды, сливочный крем</p>
+                        <span class="product-card__price">от 1 700 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Калькулятор стоимости</h2>
+            <div class="calculator__wrapper">
+                <form id="cake-form" class="calculator__form" novalidate>
+                    <div class="form-group">
+                        <label for="product-type">Тип изделия</label>
+                        <select id="product-type" class="form-control">
+                            <option value="cake">Торт</option>
+                            <option value="cupcakes">Капкейки</option>
+                            <option value="bento">Бенто-торт</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="base">Основа</label>
+                        <select id="base" class="form-control">
+                            <option value="vanilla">Ванильный бисквит</option>
+                            <option value="chocolate">Шоколадный бисквит</option>
+                            <option value="red-velvet">Красный бархат</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight"><span id="weight-label">Вес</span>: <span id="weight-value">2</span> <span id="weight-unit">кг</span></label>
+                        <input type="range" id="weight" min="1" max="10" value="2" class="form-range">
+                    </div>
+                    <div class="form-group">
+                        <label for="filling">Начинка</label>
+                        <select id="filling" class="form-control">
+                            <option value="cream-cheese">Крем-чиз</option>
+                            <option value="chocolate-ganache">Шоколадный ганаш</option>
+                            <option value="berry">Ягодная</option>
+                            <option value="caramel">Карамельная</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="decor">Декор</label>
+                        <select id="decor" class="form-control">
+                            <option value="none">Без декора</option>
+                            <option value="berries">Ягоды</option>
+                            <option value="macarons">Макаронс</option>
+                            <option value="flowers">Живые цветы</option>
+                            <option value="fondant">Мастика/фигурки</option>
+                        </select>
+                    </div>
+                    <fieldset class="form-group form-group--options">
+                        <legend>Дополнительно</legend>
+                        <label class="checkbox"><input type="checkbox" id="two-tiers" value="two-tiers"> Два яруса (+2000 ₽)</label>
+                        <label class="checkbox"><input type="checkbox" id="inscription" value="inscription"> Надпись (+300 ₽)</label>
+                        <label class="checkbox"><input type="checkbox" id="figurines" value="figurines"> Фигурки (+500 ₽)</label>
+                    </fieldset>
+                </form>
+                <div class="calculator__result">
+                    <div class="price-display">
+                        <span class="price-display__label">Итого:</span>
+                        <span class="price-display__value" id="price-value">4 800 ₽</span>
+                    </div>
+                    <div class="price-details" id="price-details">
+                        Базовая цена: 2 400 ₽<br>Декор: 0 ₽<br>Дополнительно: 0 ₽
+                    </div>
+                    <button class="btn btn--small" id="use-calc">Использовать мой расчёт</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container about__inner">
+            <div class="about__image">
+                <img src="images/about.jpg" alt="Пекарь">
+            </div>
+            <div class="about__content">
+                <h2>О нас</h2>
+                <p>Мы — семейная пекарня «ROMANOVA CAKE». Уже более 10 лет создаём десерты, которые радуют наших гостей. Наши кондитеры используют только натуральные ингредиенты: свежие ягоды, бельгийский шоколад, фермерские сливки.</p>
+                <p>Каждый торт — это маленькое произведение искусства, созданное с любовью и вниманием к деталям.</p>
+                <ul class="about__list">
+                    <li>Более 1000 довольных клиентов</li>
+                    <li>Индивидуальный подход к каждому заказу</li>
+                    <li>Доставка по городу</li>
+                </ul>
+                <a href="#order" class="btn">Заказать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы (звёзды оставлены символами, но не эмодзи) -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews__grid">
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">«Заказывали торт на свадьбу — это было невероятно! Гости до сих пор вспоминают вкус. Огромное спасибо за красоту и качество!»</p>
+                    <p class="review-card__author">— Анна и Сергей</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">«Бенто-торты просто волшебные! Заказала на день рождения дочки, все в восторге. Декор точь-в-точь как на картинке.»</p>
+                    <p class="review-card__author">— Мария</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">«Капкейки — лучшие в городе! Всегда свежие, крем нежный, а оформление выше всяких похвал. Рекомендую!»</p>
+                    <p class="review-card__author">— Дмитрий</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq__list">
+                <details class="faq__item">
+                    <summary class="faq__question">Сколько времени занимает изготовление торта?</summary>
+                    <p class="faq__answer">Обычно 2–3 дня. Для сложных дизайнов может потребоваться до недели. Рекомендуем заказывать заранее.</p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Есть ли доставка?</summary>
+                    <p class="faq__answer">Да, доставляем по городу от 500 ₽. При заказе от 5000 ₽ доставка бесплатная.</p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Можно ли заказать торт без сахара?</summary>
+                    <p class="faq__answer">Да, мы используем натуральные заменители сахара (стевия, эритрит) без потери вкуса.</p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Как хранить торт?</summary>
+                    <p class="faq__answer">Торт следует хранить в холодильнике при температуре +4°C и достать за 30 минут до подачи.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Заявка -->
+    <section class="order" id="order">
+        <div class="container">
+            <h2 class="section-title">Оставить заявку</h2>
+            <p class="order__subtitle">Заполните форму, и мы свяжемся с вами для уточнения деталей. Или нажмите «Использовать мой расчёт», чтобы добавить параметры из калькулятора.</p>
+            <div class="order__wrapper">
+                <form class="order__form" id="order-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта ROMANOVA CAKE">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-group">
+                        <label for="customer-name">Ваше имя</label>
+                        <input type="text" id="customer-name" name="name" class="form-control" placeholder="Иван" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-phone">Телефон</label>
+                        <input type="tel" id="customer-phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-message">Сообщение / пожелания</label>
+                        <textarea id="customer-message" name="message" class="form-control" rows="5" placeholder="Опишите ваш заказ или вставьте расчёт из калькулятора..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты (SVG-иконки) -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contacts__grid">
+                <div class="contact-item">
+                    <span class="contact-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                    </span>
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Кондитерская, 10</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+79372376200">8 937 237-62-00</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+                    </span>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@romanovacake.ru">info@romanovacake.ru</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </span>
+                    <h3>Режим работы</h3>
+                    <p>Ежедневно с 9:00 до 21:00</p>
+                </div>
+            </div>
+
+            <div class="socials">
+                <!-- Telegram -->
+                <a href="#" class="social-link" aria-label="Telegram">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <!-- ВКонтакте (без эмодзи) -->
+                <a href="#" class="social-link social-link--vk" aria-label="ВКонтакте">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.576-1.496c.588-.19 1.341 1.26 2.14 1.818.605.422 1.064.33 1.064.33l2.137-.03s1.118-.071.588-.964c-.043-.073-.308-.661-1.588-1.87-1.34-1.264-1.16-1.059.453-3.246.983-1.332 1.376-2.145 1.253-2.493-.117-.332-.84-.244-.84-.244l-2.406.015s-.178-.025-.31.056c-.13.079-.212.262-.212.262s-.38 1.028-.885 1.9c-1.066 1.834-1.493 1.93-1.667 1.817-.405-.264-.304-1.063-.304-1.63 0-1.772.266-2.51-.518-2.701-.26-.063-.452-.104-1.117-.111-.852-.009-1.573.003-1.981.207-.27.136-.478.438-.352.455.156.022.51.097.697.356.242.334.233 1.087.233 1.087s.139 2.07-.322 2.327c-.316.177-.75-.184-1.68-1.806-.477-.833-.837-1.756-.837-1.756s-.07-.172-.195-.264c-.152-.113-.364-.15-.364-.15l-2.286.015s-.343.01-.47.162c-.111.134-.008.41-.008.41s1.785 4.236 3.808 6.371c1.855 1.954 3.96 1.826 3.96 1.826z"/></svg>
+                    <!-- Если нужен QR-код, раскомментируйте и вставьте путь: -->
+                    <!-- <img src="images/qr-vk.png" alt="QR-код ВКонтакте" class="social-qr"> -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col"><h3>ROMANOVA CAKE</h3><p>Домашняя пекарня с любовью к каждому десерту.</p></div>
+            <div class="footer__col"><h4>Навигация</h4><ul class="footer__links"><li><a href="#hero">Главная</a></li><li><a href="#catalog">Каталог</a></li><li><a href="#calculator">Калькулятор</a></li><li><a href="#about">О нас</a></li></ul></div>
+            <div class="footer__col"><h4>Контакты</h4><p>г. Москва, ул. Кондитерская, 10</p><p>8 937 237-62-00</p><p>info@romanovacake.ru</p></div>
+            <div class="footer__col"><h4>Мы в соцсетях</h4><div class="footer__socials"><a href="#" aria-label="Telegram">TG</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="VK">VK</a></div></div>
+        </div>
+        <div class="footer__bottom"><div class="container"><p>© 2025 ROMANOVA CAKE. Все права защищены.</p></div></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
