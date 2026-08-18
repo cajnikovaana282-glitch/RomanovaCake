@@ -27,7 +27,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     scroll-behavior: smooth;
-    overflow-x: hidden;   /* убирает горизонтальную прокрутку */
+    overflow-x: hidden;
 }
 
 .container {
@@ -170,7 +170,6 @@ body {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Оверлей для мобильного меню */
 .nav-overlay {
     display: none;
     position: fixed;
@@ -189,7 +188,7 @@ body {
     opacity: 1;
 }
 
-/* Герой */
+/* Герой — теперь фон работает и на мобильных */
 .hero {
     position: relative;
     min-height: 80vh;
@@ -198,7 +197,7 @@ body {
     justify-content: center;
     text-align: center;
     background: url('images/hero.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed убран отсюда и перенесён в медиазапрос для десктопа */
 }
 
 .hero__overlay {
@@ -991,7 +990,6 @@ body {
         gap: 10px;
     }
 
-    /* Логотип на мобильных — такой же крупный, как на десктопе */
     .logo__img {
         width: 60px;
         height: 60px;
@@ -1002,14 +1000,13 @@ body {
         letter-spacing: 1px;
     }
 
-    /* Мобильное меню: скрыто за правым краем, выезжает при активации */
     .nav {
         display: flex;
         flex-direction: column;
         gap: 15px;
         position: fixed;
         top: 0;
-        right: -100%;              /* меню за пределами экрана */
+        right: -100%;
         width: 280px;
         height: 100vh;
         background: #fff;
@@ -1041,7 +1038,6 @@ body {
     }
 
     .hero {
-        background-attachment: scroll;
         min-height: 70vh;
     }
 
@@ -1072,5 +1068,12 @@ body {
 
     .order__form {
         padding: 25px;
+    }
+}
+
+/* Для десктопов возвращаем эффект параллакса */
+@media (min-width: 769px) {
+    .hero {
+        background-attachment: fixed;
     }
 }
